@@ -26,3 +26,4 @@
 - **Forms:** The project includes four forms for signing up, logging in, managing client information, and subscribing to vehicles.
 
 This project is designed to provide a basic understanding of building a web application with Node.js and MySQL, covering essential functionalities such as authentication, database management, and form handling.
+(definitely not ai generated readme)
