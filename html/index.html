@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="scroll.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <link rel="icon" type="image/png" href="Icon.png">
+    <title>Car Rental x Me</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- Your existing styles.css link -->
+    <link rel="stylesheet" href="styles.css">
+    <div id="video-container">
+        <video autoplay muted loop id="video">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <div id="video-overlay" style="background-color: #00000088; width: 100vw; height: 100vh; z-index: -1; position: fixed; transition: background-color 0.3s ease"></div>
+
+</head>
+<body>
+    <div class="banner">
+        <div class="d-flex align-items-center justify-content-center flex-grow-1">
+            <div class="hotbar d-flex align-items-center">
+                <div class="btn-group d-md-none">
+                    <button class="btn btn-outline-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </button>
+                    <div class="dropdown-menu background-color3" style="width: 200px">
+                        <a class="dropdown-item3" href="/vehicles">Vehicles</a>
+                        <button class="dropdown-item3">Dashboard</button>
+                    </div>
+                </div>
+                <a class="btn btn-outline-info mr-2 d-none d-md-inline" href="/vehicles">Vehicles</a>
+                <button class="btn btn-outline-info mr-2 d-none d-md-inline" href="/login">Dashboard</button>
+            </div>
+        </div>
+        <a href="#" class="logo" style="position: absolute; left: 50%; transform: translate(-50%, 0)" redir="signup">
+            <img src="Banner.png" alt="Logo">
+        </a>
+        <div class="auth">
+            <div class="d-flex align-items-center">
+                <!-- auth -->
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100%" id="loading">
+        <img style="width: 200px; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%)" src="loading.gif" alt="Loading..">
+    </div>
+    <div style="width: 100%" id="content-section" class="content-section color3 page-width">
+        <!-- content -->
+    </div>
+
+
+    <footer class="footer color2 gradient">
+        <hr>
+        <div class="footer__content-top page-width">
+            <h2 class="footer-block__heading">MENU</h2>
+            <ul class="footer-block__details-content list-unstyled"><li>
+                <a href="/pages/faq" class="link link--text list-menu__item list-menu__item--link">
+                FAQ
+                </a>
+            </li><li>
+                <a href="/pages/international-shipping" class="link link--text list-menu__item list-menu__item--link">
+                INTERNATIONAL SHIPPING
+                </a>
+            </li><li>
+                <a href="/pages/privacy-policy" class="link link--text list-menu__item list-menu__item--link">
+                PRIVATE POLICY
+                </a>
+            </li><li>
+                <a href="/pages/terms-of-service" class="link link--text list-menu__item list-menu__item--link">
+                TERMS OF SERVICE
+                </a>
+            </li><li>
+                <a href="/pages/ccpa-opt-out" class="link link--text list-menu__item list-menu__item--link">
+                Do not sell or share my personal information
+                </a>
+            </li></ul>
+        </div>
+        <hr>
+        <div class="footer__copyright caption">
+            <small class="copyright__content">© 2024, <a href="/" title="">Car Rental x Me</a></small>
+            <small class="copyright__content"><a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore"> </a></small>
+        </div>
+        <br><br><br>
+    </footer>
+    
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Your existing script.js link -->
+    <script src="scroll.js"></script>
+    <script src="loading.js"></script>
+</body>
+</html>

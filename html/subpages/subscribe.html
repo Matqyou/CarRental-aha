@@ -1,0 +1,33 @@
+<h2>Enter your details to subscribe!</h2>
+
+<input type="hidden" id="vehicleId" name="vehicleId" value="VEHICLE_ID">
+<div class="color3">
+    <div class="subscribe-container card">
+        <div class="car-info-container">
+            <!-- Car data will be displayed here -->
+        </div>
+        <br>
+        <form id="fill-form" class="form-medium" style="margin-left: 0px">
+            <!-- <h3>Fill out the information to complete the subscription.</h3>
+            <br> -->
+            <div class="field">
+                <input class="field_input date" type="date" id="begin_date" placeholder="">
+                <label class="field_label" for="begin_date" value="Begin Subscription"></label>
+                <label id="date-icon" for="begin_date" class="custom-calendar-icon"></label>
+            </div>
+            <div class="field">
+                <input class="field_input date" type="date" id="end_date" placeholder="">
+                <label class="field_label" for="end_date" value="End Subscription"></label>
+                <label id="date-icon" for="end_date" class="custom-calendar-icon"></label>
+            </div>
+            <div class="checkboxes color1">
+                <label for="terms_conditions" style="font-size: 14px"><input class="checkbox" type="checkbox" id="terms_conditions"> <span>By checking this box I agree to the <a href="tos">Terms and Conditions</a></span></label>
+            </div>
+            <img id="form-loading" style="width: 50px; display: none;" src="loading.gif" alt="Loading..">
+            <h6 id="failure" style="display: block; font-size: 0; transition: font-size 0s; text-align: center;">Error</h6>
+            <h6 id="success" style="display: block; font-size: 0; transition: font-size 0s; text-align: center;">Account has been created successfully!</h6>
+            <button id="submit" class="btn btn-block btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+<script type="module" src="subscribe.js"></script>
