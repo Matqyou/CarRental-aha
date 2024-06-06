@@ -468,7 +468,7 @@ app.post('/add_client', isAuthenticated, (req, res) => {
 
           console.log(`Client data recieved #${userId} ${birthdate} ${phone} ${address} ${card}`);
           // Return success response if insertion is successful
-          return res.status(201).json({ status: 'success', message: 'Client data added successfully', redirect: '/subscribe'});
+          return res.status(201).json({ status: 'success', message: 'Client data added successfully', redirect: '/vehicles'});
       });
   });
 });
