@@ -13,7 +13,8 @@
 - File System
 
 ## How to Run the Project
-1. **Set Up Node.js:** Ensure Node.js is installed on your system. If not, download and install it from [Node.js website](https://nodejs.org/).
+0. **Set Up Node.js:** Ensure Node.js is installed on your system. If not, download and install it from [Node.js website](https://nodejs.org/).
+1. **Install Node Libraries:** Open install.bat
 2. **Start Database:** Start your MySQL database server.
 3. **Create Tables:** Run the provided SQL file (`database.sql`) in the project folder to create all the required tables in your MySQL database.
 4. **Run Backend:** Execute the `base.bat` file to run the backend server. This file contains all the necessary commands and queries for starting the server.
