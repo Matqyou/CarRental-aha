@@ -104,11 +104,15 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.redirect('/login');
+  res.redirect('/vehicles');
 });
 
 app.get('/login', (req, res) => {
   renderPage('login', req, res);
+});
+
+app.get('/dashboard', (req, res) => {
+  renderPage('dashboard', req, res);
 });
 
 app.get('/signup', (req, res) => {
@@ -136,6 +140,18 @@ function checkAuth(req, res, next) {
 
 app.get('/tos', (req, res) => {
   renderPage('tos', req, res);
+})
+
+app.get('/faq', (req, res) => {
+  renderPage('faq', req, res);
+})
+
+app.get('/policy', (req, res) => {
+  renderPage('policy', req, res);
+})
+
+app.get('/opt-out', (req, res) => {
+  renderPage('opt-out', req, res);
 })
 
 app.get('/account', checkAuth, (req, res) => {
